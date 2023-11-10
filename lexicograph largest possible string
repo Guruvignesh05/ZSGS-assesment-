@@ -1,0 +1,44 @@
+public class Lexicograph {
+   public static void main (string []args)
+{
+string string 1 ="XKDGTGA"
+string string 2 ="HADF"
+string string 3 = "DCBA"
+
+char [] commonchar = findCommoncharacter(string 1 , string 2 , string 3 );
+
+   Arrays.sort (Commonchars); 
+   reverseArray (Commonchars);
+
+String largestString = new string (Commonchars);
+
+  System.out.Println ("Lexicograph largest private string + largest privateString);
+}
+
+  Private static char [] find Commoncharacter ( string s1 , string s2, string s3 )
+{
+String Builder common = new StringBuilder ();
+
+for (charch : s1 to charArray () {
+f (s2.indexOf(ch) != -1 && s3.indexOf(ch) != -1) {
+        common.append(ch);     }
+     }
+
+    return common.toString().toCharArray();
+    }
+
+   private static void reverseArray(char[] arr) {
+    int start = 0;
+     int end = arr.length - 1;
+
+       while (start < end) {
+            
+        char temp = arr[start];
+         arr[start] = arr[end];
+         arr[end] = temp;
+
+     start++;
+     end--;
+   }
+ }
+}
